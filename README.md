@@ -1,10 +1,7 @@
-# Meu Linktree
+# Pedro Ribeiro · Portfólio
 
-Página de links pessoal, feita em HTML e CSS puro.
+Portfólio profissional de freelancer: Growth, SEO e Operações.
 
-Projeto de aprendizado: GitHub → Vercel → Supabase → Lovable.
+Página única em HTML e CSS puro (`index.html`), publicada na Vercel em https://pedroharibeiro.vercel.app
 
-## Arquivos
-
-- `index.html` — estrutura da página (foto, nome, botões, ícones)
-- `style.css` — visual da página
+A versão anterior (página de links estilo Linktree) continua no histórico do Git.

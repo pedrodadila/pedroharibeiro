@@ -10,8 +10,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-NJ9522X7');</script>
 <!-- End Google Tag Manager -->
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Pedro Ribeiro | Freelancer de SEO, Sites e Tráfego Pago</title>
-<meta name="description" content="Freelancer de SEO, SEO local, Google Meu Negócio, criação de sites WordPress, tráfego pago e processos. Mais de 10 anos no digital. Pompéu-MG, atendo todo o Brasil.">
+<title>{{SEO_TITLE}}</title>
+<meta name="description" content="{{META_DESCRIPTION}}">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="author" content="Pedro Henrique Ribeiro">
 <link rel="canonical" href="https://pedroribeiro.click/">
@@ -23,18 +23,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Pedro Ribeiro">
 <meta property="og:url" content="https://pedroribeiro.click/">
-<meta property="og:title" content="Pedro Ribeiro · Freelancer de SEO, Sites e Tráfego Pago">
-<meta property="og:description" content="Faço sua empresa ser encontrada no Google, vender mais e funcionar com processo. Mais de 10 anos no digital.">
-<meta property="og:image" content="https://pedroribeiro.click/img/og-image.jpg">
+<meta property="og:title" content="{{OG_TITLE}}">
+<meta property="og:description" content="{{OG_DESCRIPTION}}">
+<meta property="og:image" content="{{OG_IMAGE}}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Pedro Ribeiro, freelancer de SEO, sites, tráfego pago e processos">
+<meta property="og:image:alt" content="{{OG_TITLE}}">
 <meta property="profile:first_name" content="Pedro">
 <meta property="profile:last_name" content="Ribeiro">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Pedro Ribeiro · Freelancer de SEO, Sites e Tráfego Pago">
-<meta name="twitter:description" content="Faço sua empresa ser encontrada no Google, vender mais e funcionar com processo.">
-<meta name="twitter:image" content="https://pedroribeiro.click/img/og-image.jpg">
+<meta name="twitter:title" content="{{OG_TITLE}}">
+<meta name="twitter:description" content="{{OG_DESCRIPTION}}">
+<meta name="twitter:image" content="{{OG_IMAGE}}">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -79,8 +79,38 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     "Gestão de performance"
    ],
    "sameAs": [
-    "https://www.linkedin.com/in/pedrohenrique-ribeiro",
+    "https://www.linkedin.com/in/pedro-henrique-ribeiro/",
     "https://github.com/pedrodadila"
+   ],
+   "hasCredential": [
+    {
+     "@type": "EducationalOccupationalCredential",
+     "name": "ClickUp Verified Power User",
+     "credentialCategory": "Selo de verificação",
+     "recognizedBy": {
+      "@type": "Organization",
+      "name": "ClickUp"
+     }
+    },
+    {
+     "@type": "EducationalOccupationalCredential",
+     "name": "eKyte Academy: Gestores",
+     "credentialCategory": "Certificado"
+    },
+    {
+     "@type": "EducationalOccupationalCredential",
+     "name": "Cientista do Marketing",
+     "credentialCategory": "Certificado",
+     "recognizedBy": {
+      "@type": "Organization",
+      "name": "V4 Company"
+     }
+    },
+    {
+     "@type": "EducationalOccupationalCredential",
+     "name": "Estratégia de Negócios",
+     "credentialCategory": "Certificado"
+    }
    ]
   },
   {
@@ -373,6 +403,30 @@ footer { padding-block: 28px 40px; color: var(--muted); font-size: 13.5px; }
 .foot nav { display: flex; gap: 16px; }
 .foot a { color: var(--muted); text-decoration: none; font-weight: 500; }
 .foot a:hover { color: var(--accent); }
+
+.topbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+.topbar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 12px; }
+.brand { font-family: var(--display); font-weight: 800; font-size: 18px; color: var(--ink); text-decoration: none; letter-spacing: -.01em; }
+.topnav { display: flex; gap: 18px; align-items: center; font-size: 15px; }
+.topnav a { color: var(--muted); text-decoration: none; font-weight: 500; }
+.topnav a:hover, .topnav a[aria-current="page"] { color: var(--accent); }
+.topnav .nav-wa { color: var(--wa); font-weight: 600; }
+@media (max-width: 560px) { .topnav .hide-sm { display: none; } }
+.creds { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.cred { display: flex; gap: 16px; align-items: flex-start; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 20px; min-width: 0; }
+.cred .seal { flex: none; width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); font-family: var(--display); font-weight: 800; font-size: 15px; }
+.cred.featured { grid-column: 1 / -1; background: var(--accent-soft); border-color: transparent; }
+.cred.featured .seal { background: var(--accent); color: var(--bg); }
+.cred h3 { font-size: 18px; font-weight: 700; }
+.cred p { color: var(--muted); font-size: 15px; margin-top: 4px; }
+.posts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.post-card { display: grid; gap: 10px; align-content: start; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 22px; text-decoration: none; color: var(--ink); min-width: 0; }
+.post-card:hover { border-color: var(--accent); }
+.post-card time { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+.post-card h3 { font-size: 19px; font-weight: 700; }
+.post-card p { color: var(--muted); font-size: 15px; }
+.more { margin-top: 22px; font-weight: 600; }
+@media (max-width: 860px) { .creds, .posts { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -380,6 +434,18 @@ footer { padding-block: 28px 40px; color: var(--muted); font-size: 13.5px; }
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJ9522X7"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="/">Pedro Ribeiro</a>
+    <nav class="topnav" aria-label="Principal">
+      <a class="hide-sm" href="/#servicos">Serviços</a>
+      <a class="hide-sm" href="/#cases">Cases</a>
+      <a href="/blog">Blog</a>
+      <a class="nav-wa" href="https://wa.me/5537984125469?text=Ol%C3%A1%2C%20Pedro!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener">WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
 <main>
 <div class="hero">
   <div class="wrap">
@@ -397,7 +463,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="btn-row">
           <a class="btn btn-wa" href="https://wa.me/5537984125469?text=Ol%C3%A1%2C%20Pedro!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2zm5.8 14.08c-.25.69-1.45 1.33-2 1.38-.51.05-1 .24-3.36-.7-2.84-1.12-4.65-4.04-4.79-4.22-.14-.19-1.15-1.53-1.15-2.92s.73-2.07.99-2.35c.26-.28.56-.35.75-.35h.54c.17 0 .41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.09.19-.14.31-.28.47-.14.17-.3.37-.42.5-.14.14-.29.29-.12.57.17.28.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.29 1.41.28.14.45.12.61-.07.17-.19.71-.82.9-1.11.19-.28.37-.24.63-.14.26.09 1.64.77 1.92.91.28.14.47.21.54.33.07.12.07.68-.18 1.37z"/></svg>Falar no WhatsApp</a>
           <a class="btn btn-ghost" href="#servicos">Ver serviços</a>
-          <a class="btn btn-icon" href="https://www.linkedin.com/in/pedrohenrique-ribeiro" target="_blank" rel="noopener me" aria-label="LinkedIn de Pedro Ribeiro" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+          <a class="btn btn-icon" href="https://www.linkedin.com/in/pedro-henrique-ribeiro/" target="_blank" rel="noopener me" aria-label="LinkedIn de Pedro Ribeiro" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
           <a class="btn btn-icon" href="https://github.com/pedrodadila" target="_blank" rel="noopener me" aria-label="GitHub de Pedro Ribeiro" title="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.3v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg></a>
           <span class="phone">(37) 98412-5469</span>
         </div>
@@ -476,7 +542,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>Para a operação parar de depender de memória e improviso e passar a rodar com método.</p>
         <ul>
           <li>Mapeamento e padronização de processos</li>
-          <li>Gestão de tarefas e fluxos no ClickUp</li>
+          <li>Gestão de tarefas e fluxos no ClickUp, com selo de Power User verificado</li>
           <li>Definição de indicadores (KPIs) e painéis de acompanhamento</li>
           <li>Ritos de gestão: dailies e reuniões de resultado</li>
         </ul>
@@ -605,6 +671,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
+<section id="certificacoes">
+  <div class="wrap">
+    <header>
+      <p class="eyebrow">Certificações e selos</p>
+      <h2>Reconhecimentos</h2>
+    </header>
+    <div class="creds">
+      <div class="cred featured"><span class="seal" aria-hidden="true">✓</span><div><h3>ClickUp Verified Power User</h3><p>Selo concedido pela ClickUp aos usuários entre os 10% que mais usam a plataforma no mundo. É a ferramenta que uso para estruturar processos, projetos e rotinas de times.</p></div></div>
+      <div class="cred"><span class="seal" aria-hidden="true">eK</span><div><h3>eKyte Academy: Gestores</h3><p>Formação em gestão de marketing.</p></div></div>
+      <div class="cred"><span class="seal" aria-hidden="true">V4</span><div><h3>Cientista do Marketing</h3><p>Curso de marketing digital da V4 Company.</p></div></div>
+      <div class="cred"><span class="seal" aria-hidden="true">EN</span><div><h3>Estratégia de Negócios</h3><p>Certificado em estratégia de negócios.</p></div></div>
+      <div class="cred"><span class="seal" aria-hidden="true">CC</span><div><h3>Bacharel em Ciências Contábeis</h3><p>Faculdade Pitágoras, 2019 a 2022.</p></div></div>
+    </div>
+  </div>
+</section>
+
 <section id="ferramentas">
   <div class="wrap">
     <header>
@@ -617,12 +699,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="tg"><h3>SEO, SEO local e GEO</h3><div class="tools"><span class="tool">Google Search Console</span><span class="tool">Google Meu Negócio</span><span class="tool">Google Analytics 4</span><span class="tool">Google Tag Manager</span><span class="tool">Rank Math</span><span class="tool">Semrush</span><span class="tool">Ubersuggest</span><span class="tool">PageSpeed Insights</span></div></div>
       <div class="tg"><h3>Tráfego pago</h3><div class="tools"><span class="tool">Meta Ads</span><span class="tool">Gerenciador de Negócios da Meta</span><span class="tool">Google Ads</span></div></div>
       <div class="tg"><h3>Ativação e atendimento</h3><div class="tools"><span class="tool">WhatsApp Business</span><span class="tool">Ligação ativa</span><span class="tool">Roteiros de atendimento</span></div></div>
-      <div class="tg"><h3>Gestão, processos e dados</h3><div class="tools"><span class="tool">ClickUp</span><span class="tool">Notion</span><span class="tool">Trello</span><span class="tool">Google Sheets</span><span class="tool">Excel</span><span class="tool">Looker Studio</span></div></div>
+      <div class="tg"><h3>Gestão, processos e dados</h3><div class="tools"><span class="tool">ClickUp <small>Power User verificado</small></span><span class="tool">Notion</span><span class="tool">Trello</span><span class="tool">Google Sheets</span><span class="tool">Excel</span><span class="tool">Looker Studio</span></div></div>
       <div class="tg"><h3>IA e produtividade</h3><div class="tools"><span class="tool">Claude</span><span class="tool">ChatGPT</span><span class="tool">Canva</span><span class="tool">Google Workspace</span></div></div>
     </div>
   </div>
 </section>
 
+{{LATEST_POSTS}}
 <div class="cta">
   <div class="wrap">
     <div class="box">
@@ -641,7 +724,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <footer>
   <div class="wrap foot">
     <span>Pedro Ribeiro · SEO, sites, tráfego pago e processos · Pompéu, MG · atendimento remoto · WhatsApp (37) 98412-5469</span>
-    <nav aria-label="Redes"><a href="https://www.linkedin.com/in/pedrohenrique-ribeiro" target="_blank" rel="noopener me">LinkedIn</a><a href="https://github.com/pedrodadila" target="_blank" rel="noopener me">GitHub</a></nav>
+    <nav aria-label="Redes"><a href="https://www.linkedin.com/in/pedro-henrique-ribeiro/" target="_blank" rel="noopener me">LinkedIn</a><a href="https://github.com/pedrodadila" target="_blank" rel="noopener me">GitHub</a></nav>
   </div>
 </footer>
 

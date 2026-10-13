@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://pedroribeiro.click/sitemap.xml

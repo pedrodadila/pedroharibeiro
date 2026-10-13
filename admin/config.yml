@@ -1,0 +1,82 @@
+# Painel do site (Decap CMS). Cada alteração salva vira um commit no GitHub
+# e a Vercel publica o site de novo em cerca de 1 minuto.
+backend:
+  name: github
+  repo: pedrodadila/pedroharibeiro
+  branch: main
+  base_url: https://pedroribeiro.click
+  auth_endpoint: api/auth
+  commit_messages:
+    create: 'Blog: cria "{{slug}}"'
+    update: 'Blog: atualiza "{{slug}}"'
+    delete: 'Blog: remove "{{slug}}"'
+    uploadMedia: 'Mídia: envia "{{path}}"'
+    deleteMedia: 'Mídia: remove "{{path}}"'
+
+locale: pt
+site_url: https://pedroribeiro.click
+display_url: https://pedroribeiro.click
+logo_url: /img/apple-touch-icon.png
+media_folder: img/uploads
+public_folder: /img/uploads
+
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  - name: posts
+    label: Posts do blog
+    label_singular: Post
+    description: Artigos publicados em pedroribeiro.click/blog. Desmarque "Rascunho" para publicar.
+    folder: content/posts
+    create: true
+    slug: "{{slug}}"
+    summary: "{{title}} · {{date | date('DD/MM/YYYY')}}"
+    sortable_fields: [date, title]
+    fields:
+      - { label: Título, name: title, widget: string }
+      - { label: Rascunho, name: draft, widget: boolean, default: true, hint: "Enquanto estiver marcado, o post não aparece no site." }
+      - { label: Data de publicação, name: date, widget: datetime, format: "YYYY-MM-DDTHH:mm:ssZ", date_format: "DD/MM/YYYY", time_format: "HH:mm", hint: "Datas futuras só aparecem depois da data e de uma nova publicação do site." }
+      - { label: Resumo, name: description, widget: text, hint: "Uma ou duas frases. Aparece na lista do blog e abaixo do título." }
+      - { label: Imagem de capa, name: cover, widget: image, required: false }
+      - { label: Texto alternativo da capa, name: cover_alt, widget: string, required: false, hint: "Descreva o que aparece na imagem. Ajuda no SEO e na acessibilidade." }
+      - { label: Tags, name: tags, widget: list, required: false, hint: "Separe por vírgula. Ex.: SEO local, Google Meu Negócio" }
+      - { label: Conteúdo, name: body, widget: markdown, hint: "Use Título 2 (H2) para as seções principais. O título do post já é o H1." }
+      - label: SEO
+        name: seo
+        widget: object
+        collapsed: true
+        required: false
+        fields:
+          - { label: Endereço do post (slug), name: slug, widget: string, required: false, hint: "Ex.: google-meu-negocio-checklist vira pedroribeiro.click/blog/google-meu-negocio-checklist. Em branco, usa o nome do arquivo." }
+          - { label: Título para o Google, name: title, widget: string, required: false, hint: "Até 60 caracteres, com a palavra-chave no começo. Em branco, usa \"Título do post | Pedro Ribeiro\"." }
+          - { label: Meta descrição, name: description, widget: text, required: false, hint: "Entre 120 e 160 caracteres. Em branco, usa o resumo." }
+          - { label: Imagem para redes sociais, name: og_image, widget: image, required: false, hint: "1200 x 630 px. Em branco, usa a capa ou a imagem padrão do site." }
+          - { label: URL canônica, name: canonical, widget: string, required: false, hint: "Só preencha se este texto foi publicado antes em outro site." }
+          - { label: Esconder do Google (noindex), name: noindex, widget: boolean, default: false, required: false }
+
+  - name: pages
+    label: Páginas e SEO
+    description: Título e descrição que o Google mostra para a página inicial e para a página do blog.
+    editor: { preview: false }
+    files:
+      - label: Página inicial (SEO)
+        name: home
+        file: content/pages/home.json
+        fields:
+          - { label: Título para o Google, name: seo_title, widget: string, hint: "Até 60 caracteres." }
+          - { label: Meta descrição, name: meta_description, widget: text, hint: "Entre 120 e 160 caracteres." }
+          - { label: Título nas redes sociais, name: og_title, widget: string, required: false }
+          - { label: Descrição nas redes sociais, name: og_description, widget: text, required: false }
+          - { label: Imagem nas redes sociais, name: og_image, widget: image, required: false, hint: "1200 x 630 px." }
+      - label: Página do blog
+        name: blog
+        file: content/pages/blog.json
+        fields:
+          - { label: Título da página (H1), name: title, widget: string }
+          - { label: Texto de abertura, name: intro, widget: text }
+          - { label: Título para o Google, name: seo_title, widget: string, hint: "Até 60 caracteres." }
+          - { label: Meta descrição, name: meta_description, widget: text, hint: "Entre 120 e 160 caracteres." }
+          - { label: Imagem nas redes sociais, name: og_image, widget: image, required: false, hint: "1200 x 630 px." }

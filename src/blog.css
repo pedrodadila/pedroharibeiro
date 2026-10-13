@@ -40,7 +40,7 @@ h1, h2, h3, h4 { font-family: var(--display); line-height: 1.15; text-wrap: bala
 .topnav { display: flex; gap: 18px; align-items: center; font-size: 15px; }
 .topnav a { color: var(--muted); text-decoration: none; font-weight: 500; }
 .topnav a:hover, .topnav a[aria-current="page"] { color: var(--accent); }
-.topnav .nav-wa { color: var(--wa); font-weight: 600; }
+.topnav .nav-wa { color: var(--accent); font-weight: 600; }
 @media (max-width: 560px) { .topnav .hide-sm { display: none; } }
 
 /* lista do blog */
@@ -109,3 +109,4 @@ footer a { color: var(--muted); text-decoration: none; font-weight: 500; margin-
 footer a:hover { color: var(--accent); }
 .prose ul:has(> li > input[type="checkbox"]) { list-style: none; padding-left: 0; }
 .prose li > input[type="checkbox"] { margin-right: 8px; accent-color: var(--accent); }
+.btn-primary { background: var(--accent); color: var(--bg); }

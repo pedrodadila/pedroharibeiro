@@ -61,4 +61,4 @@ O perfil e o site se reforçam. Um site com o mesmo nome, endereço e telefone, 
 - [ ] Produtos e serviços cadastrados
 - [ ] Site ligado ao perfil
 
-Quer ajuda para colocar sua empresa no topo do Google Maps da sua cidade? Fale comigo pelo WhatsApp.
+Quer ajuda para colocar sua empresa no topo do Google Maps da sua cidade? [Vamos conversar](https://pedroribeiro.click/#contato).

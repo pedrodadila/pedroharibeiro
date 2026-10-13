@@ -54,7 +54,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    "alternateName": "Pedro Ribeiro",
    "url": "https://pedroribeiro.click/",
    "image": "https://pedroribeiro.click/img/pedro-ribeiro.jpg",
-   "jobTitle": "Freelancer de SEO, Sites, Tráfego Pago e Processos",
+   "jobTitle": "Gestor de Performance, SEO e Growth",
    "telephone": "+55-37-98412-5469",
    "address": {
     "@type": "PostalAddress",
@@ -74,7 +74,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     "Criação de sites em WordPress",
     "Landing pages",
     "Tráfego pago (Meta Ads)",
-    "Ativação de clientes por WhatsApp e ligação",
+    "Estratégia de retenção de clientes",
     "Mapeamento de processos",
     "Gestão de performance"
    ],
@@ -111,12 +111,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
      "name": "Estratégia de Negócios",
      "credentialCategory": "Certificado"
     }
-   ]
+   ],
+   "description": "Gestor de Performance, SEO e Growth com mais de 10 anos no digital. Aberto a contratação CLT ou PJ e a projetos."
   },
   {
    "@type": "ProfessionalService",
    "@id": "https://pedroribeiro.click/#servico",
-   "name": "Pedro Ribeiro · SEO, Sites e Tráfego Pago",
+   "name": "Pedro Ribeiro · Performance, SEO e Growth",
    "url": "https://pedroribeiro.click/",
    "image": "https://pedroribeiro.click/img/og-image.jpg",
    "telephone": "+55-37-98412-5469",
@@ -196,7 +197,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "@type": "Offer",
       "itemOffered": {
        "@type": "Service",
-       "name": "Ativação de clientes por WhatsApp e ligação"
+       "name": "Estratégia de retenção de clientes"
       }
      },
      {
@@ -410,7 +411,7 @@ footer { padding-block: 28px 40px; color: var(--muted); font-size: 13.5px; }
 .topnav { display: flex; gap: 18px; align-items: center; font-size: 15px; }
 .topnav a { color: var(--muted); text-decoration: none; font-weight: 500; }
 .topnav a:hover, .topnav a[aria-current="page"] { color: var(--accent); }
-.topnav .nav-wa { color: var(--wa); font-weight: 600; }
+.topnav .nav-wa { color: var(--accent); font-weight: 600; }
 @media (max-width: 560px) { .topnav .hide-sm { display: none; } }
 .creds { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
 .cred { display: flex; gap: 16px; align-items: flex-start; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 20px; min-width: 0; }
@@ -427,6 +428,28 @@ footer { padding-block: 28px 40px; color: var(--muted); font-size: 13.5px; }
 .post-card p { color: var(--muted); font-size: 15px; }
 .more { margin-top: 22px; font-weight: 600; }
 @media (max-width: 860px) { .creds, .posts { grid-template-columns: 1fr; } }
+
+.modes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.mode { display: grid; gap: 12px; align-content: start; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 24px; min-width: 0; }
+.mode.hire { background: var(--accent-soft); border-color: transparent; }
+.mode .tag { font-family: var(--mono); font-size: 12px; color: var(--signal); letter-spacing: .06em; text-transform: uppercase; }
+.mode h3 { font-size: 21px; font-weight: 700; }
+.mode p { color: var(--muted); font-size: 15.5px; }
+.mode ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; font-size: 15px; }
+.mode li { padding-left: 20px; position: relative; }
+.mode li::before { content: ""; position: absolute; left: 2px; top: .62em; width: 8px; height: 2px; background: var(--accent); }
+.mode .link { font-weight: 600; text-decoration: none; margin-top: 4px; }
+.btn-primary { background: var(--accent); color: var(--bg); }
+.btn-primary:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(0,0,0,.14); }
+.paths { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 10px; }
+.path { background: color-mix(in srgb, var(--bg) 10%, transparent); border: 1px solid color-mix(in srgb, var(--bg) 30%, transparent); border-radius: 16px; padding: 22px; display: grid; gap: 10px; align-content: start; }
+.path h3 { color: var(--bg); font-size: 19px; font-weight: 700; }
+.path p { font-size: 15.5px; }
+.path .btn-row { margin-top: 6px; }
+.cta .btn-light { background: var(--bg); color: var(--accent); }
+.cta .btn-outline { border: 1px solid color-mix(in srgb, var(--bg) 60%, transparent); color: var(--bg); }
+.cta .reach { font-size: 14.5px; opacity: .85; margin-top: 6px; }
+@media (max-width: 860px) { .modes, .paths { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -441,7 +464,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a class="hide-sm" href="/#servicos">Serviços</a>
       <a class="hide-sm" href="/#cases">Cases</a>
       <a href="/blog">Blog</a>
-      <a class="nav-wa" href="https://wa.me/5537984125469?text=Ol%C3%A1%2C%20Pedro!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener">WhatsApp</a>
+      <a class="nav-wa" href="/#contato">Contato</a>
     </nav>
   </div>
 </header>
@@ -451,25 +474,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <p class="eyebrow">Freelancer · SEO, sites, tráfego pago e processos</p>
+        <p class="eyebrow">Performance, SEO e Growth · Aberto a projetos e contratação</p>
         <h1 style="margin-top:12px">Pedro Ribeiro</h1>
-        <p class="role">Faço sua empresa ser encontrada, vender mais e funcionar com processo.</p>
+        <p class="role">Ajudo empresas a serem encontradas, venderem mais e funcionarem com processo.</p>
         <p class="pitch">Gestor de Performance e Operações com mais de 10 anos no digital. Comecei em 2015 criando e monetizando sites com SEO e hoje junto as duas pontas: executo a parte técnica (sites, SEO, Google Meu Negócio, anúncios) e organizo a operação em volta dela (processos, indicadores e rotina).</p>
         <div class="chips">
-          <span class="chip"><b>Remoto</b> · atendo todo o Brasil</span>
+          <span class="chip"><b>Disponível</b> · CLT, PJ ou projetos</span>
           <span class="chip">Gestor que também executa</span>
-          <span class="chip">Bacharel em Ciências Contábeis</span>
+          <span class="chip">Remoto, híbrido ou presencial em Pompéu-MG</span>
         </div>
         <div class="btn-row">
-          <a class="btn btn-wa" href="https://wa.me/5537984125469?text=Ol%C3%A1%2C%20Pedro!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2zm5.8 14.08c-.25.69-1.45 1.33-2 1.38-.51.05-1 .24-3.36-.7-2.84-1.12-4.65-4.04-4.79-4.22-.14-.19-1.15-1.53-1.15-2.92s.73-2.07.99-2.35c.26-.28.56-.35.75-.35h.54c.17 0 .41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.09.19-.14.31-.28.47-.14.17-.3.37-.42.5-.14.14-.29.29-.12.57.17.28.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.29 1.41.28.14.45.12.61-.07.17-.19.71-.82.9-1.11.19-.28.37-.24.63-.14.26.09 1.64.77 1.92.91.28.14.47.21.54.33.07.12.07.68-.18 1.37z"/></svg>Falar no WhatsApp</a>
-          <a class="btn btn-ghost" href="#servicos">Ver serviços</a>
+          <a class="btn btn-primary" href="#contato">Vamos conversar</a>
+          <a class="btn btn-ghost" href="#formas">Como posso ajudar</a>
           <a class="btn btn-icon" href="https://www.linkedin.com/in/pedro-henrique-ribeiro/" target="_blank" rel="noopener me" aria-label="LinkedIn de Pedro Ribeiro" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
           <a class="btn btn-icon" href="https://github.com/pedrodadila" target="_blank" rel="noopener me" aria-label="GitHub de Pedro Ribeiro" title="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.3v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg></a>
-          <span class="phone">(37) 98412-5469</span>
         </div>
       </div>
       <figure class="portrait" style="margin:0">
-        <picture><source srcset="img/pedro-ribeiro.webp" type="image/webp"><img src="img/pedro-ribeiro.jpg" width="560" height="560" alt="Pedro Ribeiro, freelancer de SEO, sites e tráfego pago" fetchpriority="high" decoding="async"></picture>
+        <picture><source srcset="img/pedro-ribeiro.webp" type="image/webp"><img src="img/pedro-ribeiro.jpg" width="560" height="560" alt="Pedro Ribeiro, gestor de performance, SEO e growth" fetchpriority="high" decoding="async"></picture>
       </figure>
     </div>
     <div class="facts">
@@ -480,6 +502,52 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </div>
+
+<section id="formas">
+  <div class="wrap">
+    <header>
+      <p class="eyebrow">Formas de trabalhar comigo</p>
+      <h2>Para o seu time ou para o seu projeto</h2>
+      <p class="lede">Estou aberto a uma posição fixa e também a projetos. O que muda é o formato; a entrega é a mesma: execução com método.</p>
+    </header>
+    <div class="modes">
+      <article class="mode hire">
+        <span class="tag">Contratação</span>
+        <h3>CLT ou PJ no seu time</h3>
+        <p>Para empresas que buscam um gestor de Performance, Marketing, Growth ou Operações. Remoto, híbrido ou presencial em Pompéu-MG.</p>
+        <ul>
+          <li>Gestão de times e de áreas inteiras</li>
+          <li>Processos, indicadores e rotina de gestão</li>
+          <li>Integração entre marketing, CRM, produto e tecnologia</li>
+        </ul>
+        <a class="link" href="https://www.linkedin.com/in/pedro-henrique-ribeiro/" target="_blank" rel="noopener me">Ver perfil no LinkedIn →</a>
+      </article>
+      <article class="mode">
+        <span class="tag">Projetos</span>
+        <h3>Entregas com começo, meio e fim</h3>
+        <p>Para quem precisa resolver algo específico, com escopo e prazo combinados.</p>
+        <ul>
+          <li>Site ou landing page</li>
+          <li>SEO local e Google Meu Negócio</li>
+          <li>Campanhas no Meta Ads</li>
+          <li>Mapeamento de processos no ClickUp</li>
+        </ul>
+        <a class="link" href="#servicos">Ver serviços →</a>
+      </article>
+      <article class="mode">
+        <span class="tag">Contrato mensal</span>
+        <h3>Gestão sob demanda</h3>
+        <p>Para empresas que precisam de alguém conduzindo o marketing e os resultados, sem um gestor em tempo integral.</p>
+        <ul>
+          <li>Plano de ação e metas mensais</li>
+          <li>Coordenação de fornecedores</li>
+          <li>Reunião de resultados com indicadores</li>
+        </ul>
+        <a class="link" href="#contato">Conversar sobre isso →</a>
+      </article>
+    </div>
+  </div>
+</section>
 
 <section id="servicos">
   <div class="wrap">
@@ -525,12 +593,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <article class="svc">
         <span class="tag">Etapa 3 · Ativar</span>
-        <h3>Tráfego pago e ativação de clientes</h3>
-        <p>Atrair novos clientes com anúncios e fazer a base que já existe voltar a comprar.</p>
+        <h3>Tráfego pago e retenção de clientes</h3>
+        <p>Atrair novos clientes com anúncios e criar uma estratégia para a base que já existe voltar a comprar.</p>
         <ul>
           <li>Campanhas no Meta Ads (Facebook e Instagram)</li>
-          <li>Estrutura de ativação por WhatsApp e ligação ativa</li>
-          <li>Roteiros de abordagem e rotina de acompanhamento</li>
+          <li>Planejamento de campanhas por objetivo e público</li>
+          <li>Estratégia de retenção e reativação da base de clientes</li>
           <li>Leitura de resultados com foco em retorno</li>
         </ul>
         <p class="for"><b>Ideal para:</b> empresas com base de clientes parada ou que querem previsibilidade de vendas.</p>
@@ -698,7 +766,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="tg"><h3>Sites e hospedagem</h3><div class="tools"><span class="tool">WordPress</span><span class="tool">Elementor</span><span class="tool">Hostinger</span><span class="tool">Registro.br</span><span class="tool">Cloudflare</span><span class="tool">Vercel</span><span class="tool">GitHub</span><span class="tool">Lovable</span></div></div>
       <div class="tg"><h3>SEO, SEO local e GEO</h3><div class="tools"><span class="tool">Google Search Console</span><span class="tool">Google Meu Negócio</span><span class="tool">Google Analytics 4</span><span class="tool">Google Tag Manager</span><span class="tool">Rank Math</span><span class="tool">Semrush</span><span class="tool">Ubersuggest</span><span class="tool">PageSpeed Insights</span></div></div>
       <div class="tg"><h3>Tráfego pago</h3><div class="tools"><span class="tool">Meta Ads</span><span class="tool">Gerenciador de Negócios da Meta</span><span class="tool">Google Ads</span></div></div>
-      <div class="tg"><h3>Ativação e atendimento</h3><div class="tools"><span class="tool">WhatsApp Business</span><span class="tool">Ligação ativa</span><span class="tool">Roteiros de atendimento</span></div></div>
       <div class="tg"><h3>Gestão, processos e dados</h3><div class="tools"><span class="tool">ClickUp <small>Power User verificado</small></span><span class="tool">Notion</span><span class="tool">Trello</span><span class="tool">Google Sheets</span><span class="tool">Excel</span><span class="tool">Looker Studio</span></div></div>
       <div class="tg"><h3>IA e produtividade</h3><div class="tools"><span class="tool">Claude</span><span class="tool">ChatGPT</span><span class="tool">Canva</span><span class="tool">Google Workspace</span></div></div>
     </div>
@@ -706,15 +773,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 {{LATEST_POSTS}}
-<div class="cta">
+<div class="cta" id="contato">
   <div class="wrap">
     <div class="box">
-      <h2>Vamos conversar sobre o seu projeto?</h2>
-      <p>Me chame no WhatsApp e conte em poucas linhas o que você precisa. Eu respondo com os próximos passos e um orçamento.</p>
-      <div class="btn-row" style="margin-top:8px">
-        <a class="btn btn-wa" href="https://wa.me/5537984125469?text=Ol%C3%A1%2C%20Pedro!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2zm5.8 14.08c-.25.69-1.45 1.33-2 1.38-.51.05-1 .24-3.36-.7-2.84-1.12-4.65-4.04-4.79-4.22-.14-.19-1.15-1.53-1.15-2.92s.73-2.07.99-2.35c.26-.28.56-.35.75-.35h.54c.17 0 .41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.09.19-.14.31-.28.47-.14.17-.3.37-.42.5-.14.14-.29.29-.12.57.17.28.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.29 1.41.28.14.45.12.61-.07.17-.19.71-.82.9-1.11.19-.28.37-.24.63-.14.26.09 1.64.77 1.92.91.28.14.47.21.54.33.07.12.07.68-.18 1.37z"/></svg>Falar no WhatsApp</a>
-        <span class="phone">(37) 98412-5469</span>
+      <p class="eyebrow" style="color:inherit;opacity:.8">Contato</p>
+      <h2>Vamos construir o próximo resultado juntos?</h2>
+      <p>Escolha o caminho que combina com o seu momento. Em poucas linhas, me conte o contexto e eu retorno com os próximos passos.</p>
+      <div class="paths">
+        <div class="path">
+          <h3>Tenho uma vaga</h3>
+          <p>Busca um gestor de Performance, Marketing, Growth ou Operações, em CLT ou PJ?</p>
+          <div class="btn-row">
+            <a class="btn btn-light" href="https://wa.me/5537984125469?text=Ol%C3%A1%2C%20Pedro!%20Vi%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20uma%20vaga." target="_blank" rel="noopener">Conversar sobre a vaga</a>
+            <a class="btn btn-outline" href="https://www.linkedin.com/in/pedro-henrique-ribeiro/" target="_blank" rel="noopener me">Ver LinkedIn</a>
+          </div>
+        </div>
+        <div class="path">
+          <h3>Tenho um projeto</h3>
+          <p>Site, SEO local, Google Meu Negócio, tráfego pago, processos ou gestão mensal.</p>
+          <div class="btn-row">
+            <a class="btn btn-light" href="https://wa.me/5537984125469?text=Ol%C3%A1%2C%20Pedro!%20Vi%20seu%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20um%20projeto." target="_blank" rel="noopener">Pedir um orçamento</a>
+          </div>
+        </div>
       </div>
+      <p class="reach">Contato direto: (37) 98412-5469</p>
     </div>
   </div>
 </div>
@@ -723,11 +805,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <footer>
   <div class="wrap foot">
-    <span>Pedro Ribeiro · SEO, sites, tráfego pago e processos · Pompéu, MG · atendimento remoto · WhatsApp (37) 98412-5469</span>
+    <span>Pedro Ribeiro · SEO, sites, tráfego pago e processos · Pompéu, MG · remoto ou híbrido · (37) 98412-5469</span>
     <nav aria-label="Redes"><a href="https://www.linkedin.com/in/pedro-henrique-ribeiro/" target="_blank" rel="noopener me">LinkedIn</a><a href="https://github.com/pedrodadila" target="_blank" rel="noopener me">GitHub</a></nav>
   </div>
 </footer>
 
-<a class="wa-float" href="https://wa.me/5537984125469?text=Ol%C3%A1%2C%20Pedro!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2zm5.8 14.08c-.25.69-1.45 1.33-2 1.38-.51.05-1 .24-3.36-.7-2.84-1.12-4.65-4.04-4.79-4.22-.14-.19-1.15-1.53-1.15-2.92s.73-2.07.99-2.35c.26-.28.56-.35.75-.35h.54c.17 0 .41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.09.19-.14.31-.28.47-.14.17-.3.37-.42.5-.14.14-.29.29-.12.57.17.28.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.29 1.41.28.14.45.12.61-.07.17-.19.71-.82.9-1.11.19-.28.37-.24.63-.14.26.09 1.64.77 1.92.91.28.14.47.21.54.33.07.12.07.68-.18 1.37z"/></svg></a>
+<a class="wa-float" href="https://wa.me/5537984125469?text=Ol%C3%A1%2C%20Pedro!%20Vi%20seu%20site%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2zm5.8 14.08c-.25.69-1.45 1.33-2 1.38-.51.05-1 .24-3.36-.7-2.84-1.12-4.65-4.04-4.79-4.22-.14-.19-1.15-1.53-1.15-2.92s.73-2.07.99-2.35c.26-.28.56-.35.75-.35h.54c.17 0 .41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.09.19-.14.31-.28.47-.14.17-.3.37-.42.5-.14.14-.29.29-.12.57.17.28.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.29 1.41.28.14.45.12.61-.07.17-.19.71-.82.9-1.11.19-.28.37-.24.63-.14.26.09 1.64.77 1.92.91.28.14.47.21.54.33.07.12.07.68-.18 1.37z"/></svg></a>
 </body>
 </html>

@@ -12,7 +12,7 @@ const SITE = "https://pedroribeiro.click";
 const GTM = "GTM-NJ9522X7";
 const LINKEDIN = "https://www.linkedin.com/in/pedro-henrique-ribeiro/";
 const GITHUB = "https://github.com/pedrodadila";
-const WA = "https://wa.me/5537984125469?text=Ol%C3%A1%2C%20Pedro!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20projeto.";
+const WA = "https://wa.me/5537984125469?text=Ol%C3%A1%2C%20Pedro!%20Vi%20seu%20site%20e%20gostaria%20de%20conversar.";
 const FONTS = "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap";
 const WA_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2zm5.8 14.08c-.25.69-1.45 1.33-2 1.38-.51.05-1 .24-3.36-.7-2.84-1.12-4.65-4.04-4.79-4.22-.14-.19-1.15-1.53-1.15-2.92s.73-2.07.99-2.35c.26-.28.56-.35.75-.35h.54c.17 0 .41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.09.19-.14.31-.28.47-.14.17-.3.37-.42.5-.14.14-.29.29-.12.57.17.28.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.29 1.41.28.14.45.12.61-.07.17-.19.71-.82.9-1.11.19-.28.37-.24.63-.14.26.09 1.64.77 1.92.91.28.14.47.21.54.33.07.12.07.68-.18 1.37z"/></svg>';
 
@@ -72,14 +72,14 @@ const topbar = (current) => `<header class="topbar">
       <a class="hide-sm" href="/#servicos">Serviços</a>
       <a class="hide-sm" href="/#cases">Cases</a>
       <a href="/blog"${current === "blog" ? ' aria-current="page"' : ""}>Blog</a>
-      <a class="nav-wa" href="${WA}" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="nav-wa" href="/#contato">Contato</a>
     </nav>
   </div>
 </header>`;
 
 const footer = `<footer>
   <div class="wrap">
-    <span>Pedro Ribeiro · SEO, sites, tráfego pago e processos · Pompéu, MG · WhatsApp (37) 98412-5469</span>
+    <span>Pedro Ribeiro · Performance, SEO e Growth · Pompéu, MG · (37) 98412-5469</span>
     <span><a href="/">Início</a><a href="/blog">Blog</a><a href="${LINKEDIN}" target="_blank" rel="noopener me">LinkedIn</a><a href="${GITHUB}" target="_blank" rel="noopener me">GitHub</a></span>
   </div>
 </footer>`;
@@ -189,7 +189,7 @@ write("blog/index.html", head({
     <p>${esc(blogPage.intro)}</p>
   </header>
   <div class="post-list">
-    ${items || '<p class="empty">Os primeiros artigos estão a caminho. Enquanto isso, fale comigo pelo WhatsApp.</p>'}
+    ${items || '<p class="empty">Os primeiros artigos estão a caminho. Enquanto isso, <a href="/#formas">veja como posso ajudar</a>.</p>'}
   </div>
 </main>
 ${footer}
@@ -233,8 +233,8 @@ ${p.html}
       <img src="/img/pedro-ribeiro.webp" alt="Pedro Ribeiro" width="72" height="72" loading="lazy">
       <div>
         <h2>Pedro Ribeiro</h2>
-        <p>Freelancer de SEO, sites, tráfego pago e processos, com mais de 10 anos no digital. Ajudo empresas a serem encontradas no Google e a vender com método.</p>
-        <a class="btn btn-wa" href="${WA}" target="_blank" rel="noopener">${WA_ICON}Falar no WhatsApp</a>
+        <p>Gestor de Performance, SEO e Growth, com mais de 10 anos no digital. Aberto a projetos e a contratação CLT ou PJ.</p>
+        <a class="btn btn-primary" href="/#contato">Vamos conversar</a>
       </div>
     </aside>
     ${related.length ? `<section class="related"><h2>Leia também</h2><div class="grid">${related.map((o) => `<a href="/blog/${o.slug}">${esc(o.title)}</a>`).join("")}</div></section>` : ""}

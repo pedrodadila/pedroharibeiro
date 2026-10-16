@@ -163,6 +163,10 @@ const homeHtml = read("src/home.html")
   .replace("{{LATEST_POSTS}}", latest);
 write("index.html", homeHtml);
 
+// página independente de apresentação para contratação freelancer
+write("freelas/index.html", read("src/freelas.html"));
+write("assets/freelas.css", read("src/freelas.css"));
+
 // lista do blog
 const blogUrl = `${SITE}/blog`;
 const items = posts.map((p) => `<a class="post-item${p.cover ? "" : " no-cover"}" href="/blog/${p.slug}">
@@ -252,6 +256,7 @@ const lastmod = isoDay(indexable.length ? new Date(Math.max(...indexable.map((p)
 write("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>${SITE}/</loc><lastmod>${isoDay(now)}</lastmod></url>
+  <url><loc>${SITE}/freelas</loc><lastmod>${isoDay(now)}</lastmod></url>
   <url><loc>${blogUrl}</loc><lastmod>${lastmod}</lastmod></url>
 ${indexable.map((p) => `  <url><loc>${SITE}/blog/${p.slug}</loc><lastmod>${isoDay(p.updated)}</lastmod></url>`).join("\n")}
 </urlset>

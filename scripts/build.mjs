@@ -101,7 +101,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="robots" content="${noindex ? "noindex, follow" : "index, follow, max-image-preview:large"}">
 <meta name="author" content="Pedro Henrique Ribeiro">
 <link rel="canonical" href="${esc(url)}">
-<meta name="theme-color" content="#0f5e63">
+<meta name="theme-color" content="#245a4a">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <link rel="alternate" type="application/rss+xml" title="Blog do Pedro Ribeiro" href="${SITE}/blog/feed.xml">

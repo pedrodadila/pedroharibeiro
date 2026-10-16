@@ -1,13 +1,13 @@
 /* Blog: mesma identidade da página inicial (tokens iguais), coluna de leitura de ~68 caracteres. */
 :root {
-  --bg: #f4f7f6;
-  --surface: #ffffff;
-  --ink: #12211f;
-  --muted: #536663;
-  --line: #d9e3e1;
-  --accent: #0f5e63;
-  --accent-soft: #e2efee;
-  --signal: #b5781c;
+  --bg: #f6f5ef;
+  --surface: #fffefa;
+  --ink: #181d1a;
+  --muted: #525d55;
+  --line: #dcded5;
+  --accent: #245a4a;
+  --accent-soft: #e5ede5;
+  --signal: #8d582f;
   --wa: #1f8f4e;
   --display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
   --body: "IBM Plex Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
@@ -16,12 +16,12 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #0d1716; --surface: #13201f; --ink: #e5eeec; --muted: #9db2ae;
-    --line: #253735; --accent: #5fbcb5; --accent-soft: #17302e; --signal: #e3a94e; --wa: #1f8f4e; color-scheme: dark;
+    --line: #2d3b32; --accent: #79c2a2; --accent-soft: #18342b; --signal: #e0a16b; --wa: #1f8f4e; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #0d1716; --surface: #13201f; --ink: #e5eeec; --muted: #9db2ae;
-  --line: #253735; --accent: #5fbcb5; --accent-soft: #17302e; --signal: #e3a94e; --wa: #1f8f4e; color-scheme: dark;
+  --line: #2d3b32; --accent: #79c2a2; --accent-soft: #18342b; --signal: #e0a16b; --wa: #1f8f4e; color-scheme: dark;
 }
 
 * { box-sizing: border-box; }
